@@ -12,34 +12,37 @@
     <link rel="stylesheet" href="css/styles.css"/>
 </head>
     <ma>
-        <div class="container">
-            <header class="page-header">
+        <header class="page-header">
+            <div class="container">
                 <nav class="site-contacts">
-                        <a href="" class="logo underline">Web<span class="black underline">Studio</span></a> 
-                        <ul class="site-nav list">
-                            <li class="nav-item"><a href="./index.html" class="link current underline link-studio">Студія</a></li>
-                            <li class="nav-item"><a href="./portfolio.html" class="link underline">Портфоліо</a></li>
-                            <li class="nav-item"><a href="" class="link underline">Контакти</a></li>
-                        </ul>
-                        <ul class="contacts-nav list">
-                            <li class="aside icon-envelope">
-                                <a href="" class="link underline">
-                                    <svg class="aside-icon" width="16" height="12">
-                                        <use class="link-aside-icon" href="./images/icons.svg#icon-envelope"></use>
-                                    </svg>info@devstudio.com
-                                </a>
-                            </li>
-                            <li class="aside icon-smartphone">
-                                <a href="" class="link underline">
-                                    <svg class="aside-icon" width="10" height="16">
-                                        <use class="link-aside-icon" href="./images/icons.svg#icon-smartphone"></use>
-                                    </svg>+38 096 111 11 11
-                                </a>
-                            </li>
-                        </ul> 
+                    <a href="" class="logo underline">Web
+                        <span class="black underline">Studio</span>
+                    </a> 
+                    <ul class="site-nav list">
+                        <li class="nav-item"><a href="./index.html" class="link underline current link-studio">Студія</a></li>
+                        <li class="nav-item"><a href="./portfolio.html" class="link underline">Портфоліо</a></li>
+                        <li class="nav-item"><a href="" class="link underline">Контакти</a></li>
+                    </ul>
+                    <ul class="contacts-nav list">
+                        <li class="aside icon-envelope">
+                            <a href="" class="link underline">
+                                <svg class="aside-icon" width="16" height="12">
+                                    <use class="link-aside-icon" href="./images/icons.svg#icon-envelope"></use>
+                                </svg>info@devstudio.com
+                                /a>
+                        </li>
+                        <li class="aside icon-smartphone">
+                            <a href="" class="link underline">
+                                <svg class="aside-icon" width="10" height="16">
+                                    <use class="link-aside-icon" href="./images/icons.svg#icon-smartphone"></use>
+                                </svg>+38 096 111 11 11
+                            </a>
+                        </li>
+                    </ul> 
                 </nav>
-            </header>
-        </div>
+            </div> 
+        </header>
+
         <main>
             <section class="hero">
                 <div class="container-hero overlay">
@@ -380,10 +383,14 @@
 
                 <div class="footer-form">
                     <strong class="footer-form-titel">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</strong>
-                    <div class="wrap-input">
+                    <form class="wrap-input">
                         <input type="email" name="footer-email" placeholder="E-mail" class="footer-input">
-                        <button type="submit" class="button primary footer-btn">Підписатися</button>
-                    </div>
+                        <button type="submit" class="footer-btn">Підписатися
+                            <svg class="footer-form-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-icon-send"></use>
+                            </svg>
+                        </button>
+                    </form>
                 </div>
             </div>
         </footer>
@@ -398,17 +405,15 @@
                 <div class="form">
                     <b class="form-titel">Залиште свої дані, ми вам передзвонимо</b>
                     <form class="contact-form">
-                        <div class="form-wrap">
-                            <label class="style-label">
-                                <span class="style-text">Ім'я </span> 
-                                <span class="form-wraper-svg">
-                                    <input name="user-name" type="text" class="contact-form-input user-input">
-                                    <svg class="form-svg" width="18" height="18">
-                                        <use href="./images/icons.svg#icon-person-black"></use>
-                                    </svg>
-                                </span>
-                            </label>
-                        </div>
+                        <label class="style-label">
+                            <span class="style-text">Ім'я </span> 
+                            <span class="form-wraper-svg">
+                                <input name="user-name" type="text" class="contact-form-input user-input">
+                                <svg class="form-svg" width="18" height="18">
+                                    <use href="./images/icons.svg#icon-person-black"></use>
+                                </svg>
+                            </span>
+                        </label>
                         <label class="style-label">
                             <span class="style-text">Телефон</span>
                             <span class="form-wraper-svg">
@@ -431,21 +436,20 @@
                             <span class="style-text">Коментар</span>
                             <textarea name="user-coment" placeholder="Введіть текст" class="contact-form-text"></textarea>
                         </label>  
-    
-                        <div class="checkbox">
-                            <label class="checkbox-text">
-                                <input name="accept-policy" type="checkbox" required class="checkbox-input">
-                                <span class="icon-checkbox"></span>
-                                Погоджуюся з розсилкою та приймаю 
-                                <a href="" class="link-box">
-                                    <span class="checkbox-link">Умови договору</span>
-                                </a>
-                            </label>
-                        </div>
-                        <div class="submit-btn">
-                            <button type="submit" class="contact-form-btn button primary">Відправити</button>
-                        </div>
                     </form>
+                </div>
+                <div class="checkbox">
+                    <label class="checkbox-text">
+                        <input name="accept-policy" type="checkbox" required class="checkbox-input">
+                        <span class="icon-checkbox"></span>
+                        Погоджуюся з розсилкою та приймаю 
+                        <a href="" class="link-box">
+                            <span class="checkbox-link">Умови договору</span>
+                        </a>
+                    </label>
+                </div>
+                <div class="submit-btn">
+                    <button type="submit" class="contact-form-btn">Відправити</button>
                 </div>
             </div>
         </div>

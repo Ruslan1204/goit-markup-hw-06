@@ -16,34 +16,37 @@
 </head>
 
 <body>
-    <div class="container">
-        <header class="page-header">
+    <header class="page-header">
+        <div class="container">
             <nav class="site-contacts">
-                    <a href="" class="logo underline">Web<span class="black underline">Studio</span></a> 
-                    <ul class="site-nav list">
-                        <li class="nav-item"><a href="./index.html" class="link underline">Студія</a></li>
-                        <li class="nav-item"><a href="./portfolio.html" class="link current underline link-studio">Портфоліо</a></li>
-                        <li class="nav-item"><a href="" class="link underline">Контакти</a></li>
-                    </ul>
-                    <ul class="contacts-nav list">
-                        <li class="aside icon-envelope">
-                            <a href="" class="link underline">
-                                <svg class="aside-icon" width="16" height="12">
-                                    <use class="link-aside-icon" href="./images/icons.svg#icon-envelope"></use>
-                                </svg>info@devstudio.com
-                            </a>
-                        </li>
-                        <li class="aside icon-smartphone">
-                            <a href="" class="link underline">
-                                <svg class="aside-icon" width="10" height="16">
-                                    <use class="link-aside-icon" href="./images/icons.svg#icon-smartphone"></use>
-                                </svg>+38 096 111 11 11
-                            </a>
-                        </li>
-                    </ul> 
+                <a href="" class="logo underline">Web
+                    <span class="black underline">Studio</span>
+                </a> 
+                <ul class="site-nav list">
+                    <li class="nav-item"><a href="./index.html" class="link underline">Студія</a></li>
+                    <li class="nav-item"><a href="./portfolio.html" class="link current underline link-studio">Портфоліо</a></li>
+                    <li class="nav-item"><a href="" class="link underline">Контакти</a></li>
+                </ul>
+                <ul class="contacts-nav list">
+                    <li class="aside icon-envelope">
+                        <a href="" class="link underline">
+                            <svg class="aside-icon" width="16" height="12">
+                                <use class="link-aside-icon" href="./images/icons.svg#icon-envelope"></use>
+                            </svg>info@devstudio.com
+                        </a>
+                    </li>
+                    <li class="aside icon-smartphone">
+                        <a href="" class="link underline">
+                            <svg class="aside-icon" width="10" height="16">
+                                <use class="link-aside-icon" href="./images/icons.svg#icon-smartphone"></use>
+                            </svg>+38 096 111 11 11
+                        </a>
+                    </li>
+                </ul> 
             </nav>
-        </header>
-    </div>
+        </div> 
+    </header>
+
     <main>
         <section class="section-navigation section">
             <div class="container benefits">
@@ -281,11 +284,16 @@
 
             <div class="footer-form">
                 <strong class="footer-form-titel">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</strong>
-                <div class="wrap-input">
+                <form class="wrap-input">
                     <input type="email" name="footer-email" placeholder="E-mail" class="footer-input">
-                    <button type="submit" class="button primary footer-btn">Підписатися</button>
-                </div>
+                    <button type="submit" class="footer-btn">Підписатися
+                        <svg class="footer-form-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
             </div>
+        </div>
     </footer>
 </body>
 
